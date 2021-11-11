@@ -9,6 +9,7 @@ from itemadapter import ItemAdapter
 from scrapy.exporters import CsvItemExporter
 import logging
 import pymongo
+from mongodb_config import mongodb_uri, username, password
 
 
 class TyresToCsvPipeline:
@@ -29,36 +30,37 @@ class TyresToCsvPipeline:
     def close_spider(self, spider):
         self.exporter.finish_exporting()
         self.file.close()
+        logging.info('Items saved to {}'.format(self.filepath))
 
 
 class TyresToMongoDbPipeline:
 
-    collection_name = 'top_reddit_posts'
-
-    def __init__(self, mongo_uri, mongo_db):
-        self.mongo_uri = mongo_uri
-        self.mongo_db = mongo_db
+    def __init__(self, db_name, coll_name):
+        self.db_name = db_name
+        self.coll_name = coll_name
 
     @classmethod
     def from_crawler(cls, crawler):
-        ## pull in information from settings.py
-        return cls(
-            mongo_uri=crawler.settings.get('MONGO_URI'),
-            mongo_db=crawler.settings.get('MONGO_DATABASE')
-        )
+        return cls(db_name=crawler.spider.db_name,
+                   coll_name=crawler.spider.coll_name)
 
     def open_spider(self, spider):
-        ## initializing spider
-        ## opening db connection
-        self.client = pymongo.MongoClient(self.mongo_uri)
-        self.db = self.client[self.mongo_db]
+        ## Initializing connection to MongoDB
+        if self.db_name:
+            self.client = pymongo.MongoClient(mongodb_uri, username=username, password=password)
+            self.db = self.client[self.db_name]
 
     def close_spider(self, spider):
-        ## clean up when spider is closed
-        self.client.close()
+        if self.db_name:
+            self.client.close()
 
     def process_item(self, item, spider):
-        ## how to handle each post
-        self.db[self.collection_name].insert(dict(item))
-        logging.debug("Post added to MongoDB")
-        return item
+        if self.db_name:
+            filter = {'manufacturer': item['manufacturer'],
+                      'tyre_size': item['tyre_size'],
+                      'tyre_pattern': item['tyre_pattern']}
+            self.db[self.coll_name].update_one(filter, {"$set": item}, upsert=True)
+            logging.info("Items saved to MongoDB")
+            return item
+        else:
+            return item
