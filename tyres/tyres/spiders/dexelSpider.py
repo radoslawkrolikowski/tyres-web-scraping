@@ -9,13 +9,14 @@ class DexelspiderSpider(scrapy.Spider):
     allowed_domains = ['dexel.co.uk']
     start_urls = ['http://dexel.co.uk/']
 
-    def __init__(self, width, profile, rim):
+    def __init__(self, width, profile, rim, filepath):
 
         super(DexelspiderSpider, self).__init__()
 
         self.width = width
         self.profile = profile
         self.rim = rim
+        self.filepath = filepath
 
     def parse(self, response):
         query_url = self.start_urls[0] + 'shopping/tyre-results?width=' + str(self.width) \
@@ -76,5 +77,4 @@ class DexelspiderSpider(scrapy.Spider):
                 'all_season': True if all_season else False,
                 'run_flat': True if run_flat else False,
                 'extra_laod': True if extra_load else False
-
             }
