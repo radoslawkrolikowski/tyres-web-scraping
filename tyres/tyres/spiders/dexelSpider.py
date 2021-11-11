@@ -1,8 +1,10 @@
 import scrapy
 from scrapy.http import Request
 from scrapy.selector import Selector
+from scrapy.crawler import CrawlerProcess
 from selenium import webdriver
 from time import sleep
+from datetime import datetime
 
 class DexelspiderSpider(scrapy.Spider):
     name = 'dexelSpider'
@@ -29,6 +31,9 @@ class DexelspiderSpider(scrapy.Spider):
         sel = Selector(text=self.driver.page_source)
 
         results = sel.xpath('//div[@class="result"]')
+
+        # Create the timestamp object to track when items were scraped
+        timestamp = datetime.now()
         
         for result in results:
             sleep(1)
@@ -76,5 +81,14 @@ class DexelspiderSpider(scrapy.Spider):
                 'winter': True if winter else False,
                 'all_season': True if all_season else False,
                 'run_flat': True if run_flat else False,
-                'extra_laod': True if extra_load else False
+                'extra_laod': True if extra_load else False,
+                'timestamp': timestamp
             }
+
+
+process = CrawlerProcess({
+    'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
+})
+
+process.crawl(MySpider)
+process.start() # the script will block here until the crawling is finished
