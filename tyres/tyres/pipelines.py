@@ -57,7 +57,9 @@ class TyresToMongoDbPipeline:
     def process_item(self, item, spider):
         if self.db_name:
             filter = {'manufacturer': item['manufacturer'],
-                      'tyre_size': item['tyre_size'],
+                      'width': item['width'],
+                      'profile': item['profile'],
+                      'rim': item['rim'],
                       'tyre_pattern': item['tyre_pattern']}
             self.db[self.coll_name].update_one(filter, {"$set": item}, upsert=True)
             logging.info("Items saved to MongoDB")
