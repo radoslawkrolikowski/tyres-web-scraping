@@ -13,6 +13,13 @@ from mongodb_config import mongodb_uri, username, password
 
 
 class TyresToCsvPipeline:
+    """Implementation of the Scrapy Pipeline that saves scraped items to CSV file.
+ 
+    Parameters
+    ----------
+    filepath: str
+        File path that determines where to save the CSV file (for example, /home/tyres.csv)
+    """
     def __init__(self, filepath):
         self.filepath = filepath
         self.file = open(self.filepath, 'w+b')
@@ -34,7 +41,20 @@ class TyresToCsvPipeline:
 
 
 class TyresToMongoDbPipeline:
+    """Implementation of the Scrapy Pipeline that upserts scraped items to the MongeDB
+    collection as specified by db_name and coll_name. To perform authorization you have to firstly import
+    the username and password from an external file.
 
+    Pipeline updates/inserts items based on the following selection criteria (fileds):
+        {'manufacturer', 'width', 'profile', 'rim', 'tyre_pattern'}
+
+    Parameters
+    ----------
+    db_name: str
+        MongoDB database name. If the db_name is ommited then the pipeline doesn't save items to MongoDB.
+    coll_name: str
+        MongoDB collection name.
+    """
     def __init__(self, db_name, coll_name):
         self.db_name = db_name
         self.coll_name = coll_name
