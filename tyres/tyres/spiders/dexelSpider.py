@@ -7,6 +7,27 @@ from time import sleep
 from datetime import datetime
 
 class DexelspiderSpider(scrapy.Spider):
+    """Implementation of the Scrapy Spider that extracts tyres information
+    from dexel.co.uk
+    ----------
+    width: str
+        Tyre width.
+    profile: str
+        Tyre profile.
+    rim: str
+        Rim size.
+    filepath: str
+        File path that determines where to save the CSV file (for example, /home/tyres.csv)
+    db_name: str
+        MongoDB database name. If the db_name is None then the pipeline doesn't save items to MongoDB.
+    coll_name: str
+        MongoDB collection name.
+
+    Yields
+    ------
+    dict
+        Dictionary that represents scraped item.
+    """
     name = 'dexelSpider'
     allowed_domains = ['dexel.co.uk']
     start_urls = ['http://dexel.co.uk/']
