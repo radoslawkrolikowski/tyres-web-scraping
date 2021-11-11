@@ -12,11 +12,12 @@ class DexelspiderSpider(scrapy.Spider):
     start_urls = ['http://dexel.co.uk/']
     custom_settings = {
         'ITEM_PIPELINES': {
-            'tyres.pipelines.TyresToCsvPipeline': 100
+            'tyres.pipelines.TyresToCsvPipeline': 100,
+            'tyres.pipelines.TyresToMongoDbPipeline': 200
         }
     }
 
-    def __init__(self, width, profile, rim, filepath):
+    def __init__(self, width, profile, rim, filepath, db_name, coll_name):
 
         super(DexelspiderSpider, self).__init__()
 
@@ -24,6 +25,8 @@ class DexelspiderSpider(scrapy.Spider):
         self.profile = profile
         self.rim = rim
         self.filepath = filepath
+        self.db_name = db_name
+        self.coll_name = coll_name
 
     def parse(self, response):
         query_url = self.start_urls[0] + 'shopping/tyre-results?width=' + str(self.width) \
@@ -31,14 +34,14 @@ class DexelspiderSpider(scrapy.Spider):
 
         self.driver = webdriver.Firefox()
         self.driver.get(query_url)
-        sleep(0.5)
+        sleep(1)
 
         sel = Selector(text=self.driver.page_source)
 
         results = sel.xpath('//div[@class="result"]')
 
         # Create the timestamp object to track when items were scraped
-        timestamp = datetime.now()
+        # timestamp = datetime.now()
         
         for result in results:
             sleep(1)
@@ -58,8 +61,12 @@ class DexelspiderSpider(scrapy.Spider):
                     manufacturer = description[1].strip().split(" ", 1)[0]
                     tyre_pattern = description[1].strip().split(" ", 1)[1]
                 else:
-                    manufacturer = description[1]
-                    tyre_pattern = None
+                    if description[1].strip():
+                        manufacturer = description[1]
+                        tyre_pattern = None
+                    else:
+                        manufacturer = None
+                        tyre_pattern = None
             else:
                 # Another way the get the manufacturer if description does not contain it
                 manufacturer = result.xpath('.//*[@class="manufacturer"]/@alt').extract_first() 
@@ -77,7 +84,9 @@ class DexelspiderSpider(scrapy.Spider):
 
             yield {
                 'manufacturer': manufacturer,
-                'tyre_size': tyre_size,
+                'width': self.width,
+                'profile': self.profile,
+                'rim': self.rim,
                 'tyre_pattern': tyre_pattern,
                 'price': price,
                 'fuel': fuel,
@@ -87,5 +96,5 @@ class DexelspiderSpider(scrapy.Spider):
                 'all_season': True if all_season else False,
                 'run_flat': True if run_flat else False,
                 'extra_laod': True if extra_load else False,
-                'timestamp': timestamp
+                # 'timestamp': timestamp.strftime('%Y-%m-%d-%H-%M-%S')
             }
