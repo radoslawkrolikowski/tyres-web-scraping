@@ -10,6 +10,11 @@ class DexelspiderSpider(scrapy.Spider):
     name = 'dexelSpider'
     allowed_domains = ['dexel.co.uk']
     start_urls = ['http://dexel.co.uk/']
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'tyres.pipelines.TyresToCsvPipeline': 100
+        }
+    }
 
     def __init__(self, width, profile, rim, filepath):
 
@@ -84,11 +89,3 @@ class DexelspiderSpider(scrapy.Spider):
                 'extra_laod': True if extra_load else False,
                 'timestamp': timestamp
             }
-
-
-process = CrawlerProcess({
-    'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
-})
-
-process.crawl(MySpider)
-process.start() # the script will block here until the crawling is finished
