@@ -20,7 +20,10 @@ if __name__ == '__main__':
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
     })
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="""Run the chosen Scrapy spider that scrapes items based on 
+                                            provided input arguments such as width, profile, rim. By default items 
+                                            are exported to the CSV file, but you can also specify db_name and coll_name to 
+                                            save data to the MongoDB""")
 
     parser.add_argument(
         "--spider",
@@ -52,7 +55,7 @@ if __name__ == '__main__':
     parser.add_argument(
         "--filepath",
         type=str,
-        help="Where to save the exported CSV file",
+        help="Where to save the exported CSV file. Default file path format: YYYY-mm-dd-HH-MM_<spider>.csv",
     )
 
     parser.add_argument(
