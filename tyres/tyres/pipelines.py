@@ -51,7 +51,7 @@ class TyresToMongoDbPipeline:
     Parameters
     ----------
     db_name: str
-        MongoDB database name. If the db_name is ommited then the pipeline doesn't save items to MongoDB.
+        MongoDB database name. If the db_name is None then the pipeline doesn't save items to MongoDB.
     coll_name: str
         MongoDB collection name.
     """
@@ -73,6 +73,7 @@ class TyresToMongoDbPipeline:
     def close_spider(self, spider):
         if self.db_name:
             self.client.close()
+            logging.info("Items saved to MongoDB")
 
     def process_item(self, item, spider):
         if self.db_name:
@@ -81,8 +82,8 @@ class TyresToMongoDbPipeline:
                       'profile': item['profile'],
                       'rim': item['rim'],
                       'tyre_pattern': item['tyre_pattern']}
+            # Perform upsert one item at a time
             self.db[self.coll_name].update_one(filter, {"$set": item}, upsert=True)
-            logging.info("Items saved to MongoDB")
             return item
         else:
             return item
