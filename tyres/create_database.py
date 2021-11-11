@@ -1,9 +1,10 @@
 import pymongo
+from mongodb_config import mongodb_uri, username, password
 
-# Connect to the MongoDB instance on the port 27017
-myclient = pymongo.MongoClient("mongodb://localhost:27017/",
-                                username='root',
-                                password='example',)
+# Connect to the MongoDB instance
+myclient = pymongo.MongoClient(mongodb_uri,
+                               username=username,
+                               password=password)
 
 dblist = myclient.list_database_names()
 if "tyres" not in dblist:
