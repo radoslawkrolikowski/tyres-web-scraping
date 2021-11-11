@@ -6,13 +6,18 @@ myclient = pymongo.MongoClient(mongodb_uri,
                                username=username,
                                password=password)
 
-dblist = myclient.list_database_names()
-if "tyres" not in dblist:
-    # Create the database if doesn't exist   
-    mydb = myclient["tyres"]
+# Create the database and the collection
+mydb = myclient["tyres"]
+mycol = mydb["tyres"]
 
-collist = mydb.list_collection_names()
-if "tyres" in collist:
-    # Create the collection if it doesn't exist
-    mycol = mydb["tyres"]
+# Create the compound index
+mycol.create_index([("width" , 1),
+                    ("profile", 1),
+                    ("rim", 1),
+                    ("price", 1)],
+                        name="index")
 
+# List the indexes:
+print('Available indexes:')
+for index in mycol.list_indexes():
+    print(index)
