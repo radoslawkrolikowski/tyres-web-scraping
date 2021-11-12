@@ -31,12 +31,12 @@ class DexelspiderSpider(scrapy.Spider):
     name = 'dexelSpider'
     allowed_domains = ['dexel.co.uk']
     start_urls = ['http://dexel.co.uk/']
-    custom_settings = {
-        'ITEM_PIPELINES': {
-            'tyres.pipelines.TyresToCsvPipeline': 100,
-            'tyres.pipelines.TyresToMongoDbPipeline': 200
-        }
-    }
+    # custom_settings = {
+    #     'ITEM_PIPELINES': {
+    #         'tyres.pipelines.TyresToCsvPipeline': 100,
+    #         'tyres.pipelines.TyresToMongoDbPipeline': 200
+    #     }
+    # }
 
     def __init__(self, width, profile, rim, filepath, db_name, coll_name):
 
@@ -59,7 +59,7 @@ class DexelspiderSpider(scrapy.Spider):
 
         sel = Selector(text=self.driver.page_source)
 
-        results = sel.xpath('//div[@class="result"]')
+        results = sel.xpath('//div[@class="result" or @class="result offer"]')
 
         # Create the timestamp object to track when items were scraped
         # timestamp = datetime.now()
