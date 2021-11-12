@@ -1,8 +1,8 @@
 ## Tyres web scraping technical assignment
 
 The repository contains python implementations of Scrapy spiders that scrap data regarding offered tyres from the following websites:
-* <dexel.co.uk>
-* <national.co.uk>
+* dexel.co.uk
+* national.co.uk
 
 Subsequently, all the retrieved items are exported to a CSV file and saved into the MongoDB collection if specified. 
 
