@@ -106,6 +106,7 @@ class DexelspiderSpider(scrapy.Spider):
             extra_load = result.xpath('.//li[not(contains(@style, "display:none")) and @class="el"]/img/@alt').extract_first() 
 
             yield {
+                'website': self.start_urls[0],
                 'manufacturer': manufacturer,
                 'width': self.width,
                 'profile': self.profile,
