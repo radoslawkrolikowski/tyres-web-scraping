@@ -6,6 +6,27 @@ from time import sleep
 
 
 class NationalspiderSpider(scrapy.Spider):
+    """Implementation of the Scrapy Spider that extracts tyres information
+    from national.co.uk
+    ----------
+    width: str
+        Tyre width.
+    profile: str
+        Tyre profile.
+    rim: str
+        Rim size.
+    filepath: str
+        File path that determines where to save the CSV file (for example, /home/tyres.csv)
+    db_name: str
+        MongoDB database name. If the db_name is None then the pipeline doesn't save items to MongoDB.
+    coll_name: str
+        MongoDB collection name.
+
+    Yields
+    ------
+    dict
+        Dictionary that represents scraped item.
+    """
     name = 'nationalSpider'
     allowed_domains = ['national.co.uk']
     start_urls = ['http://national.co.uk/']
