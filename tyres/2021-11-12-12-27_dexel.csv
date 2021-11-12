@@ -1,0 +1,79 @@
+website,manufacturer,width,profile,rim,tyre_pattern,tyre_size,price,fuel,wetgrip,noise,winter,all_season,run_flat,extra_laod
+http://dexel.co.uk/,Pirelli,205,55,16,P7,205/55 R16 91W Pirelli P7,85.22,C,B,71,False,False,False,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91W Pirelli Cinturato P7,85.22,E,B,70,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91W Michelin Primacy 4,85.35,C,A,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91W Michelin Primacy 4,85.35,A,B,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Energy Saver,205/55 R16 91W Michelin Energy Saver,86.48,B,A,70,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 91W Hankook Ventus Prime 3 (K125),87.84,F,C,69,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Cross Climate +,205/55 R16 94V Michelin Cross Climate +,88.15,C,B,69,False,True,False,True
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94V Continental EcoContact 5,88.7,B,B,72,False,False,False,True
+http://dexel.co.uk/,Dexel,205,55,16,Premium Choice,205/55 R16 91V Dexel Premium Choice,88.7,E,A,70,False,False,True,False
+http://dexel.co.uk/,Vredestein,205,55,16,Snowtrac 5,205/55 R16 91H Vredestein Snowtrac 5,89.04,E,E,68,True,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94H Continental EcoContact 5,89.84,B,B,72,False,False,False,True
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip,205/55 R16 91V Goodyear EfficientGrip,90.37,C,B,68,False,False,True,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91W Pirelli Cinturato P7,90.64,E,B,71,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,eContact (Hybrid cars),205/55 R16 91Q Continental eContact (Hybrid cars),92.66,A,B,71,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94V Michelin Primacy 4,92.79,C,A,69,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94H Michelin Primacy 4,92.79,C,A,70,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94H Michelin Primacy 4,92.79,A,A,68,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94V Michelin Primacy 4,92.79,A,B,68,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94H Michelin Primacy 4,94.76,A,B,68,False,False,False,True
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94W Continental EcoContact 5,95.38,B,B,72,False,False,False,True
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94H Continental EcoContact 5,96.36,B,B,72,False,False,False,True
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact,205/55 R16 91V Continental PremiumContact,96.52,F,C,68,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91W Continental EcoContact 6,96.55,B,B,71,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91V Michelin Primacy 3,106.58,E,A,71,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91W Michelin Primacy 3,106.58,E,A,71,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91H Michelin Primacy 3,106.58,E,A,71,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,WinterContact TS 830 P,205/55 R16 91H Continental WinterContact TS 830 P,109.8,F,E,72,True,False,True,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91V Pirelli Cinturato P7,79.8,C,B,70,False,False,False,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91V Pirelli Cinturato P7,80.35,E,B,70,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91H Continental EcoContact 5,80.37,B,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 5,205/55 R16 91H Continental PremiumContact 5,80.37,C,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 6,205/55 R16 91H Continental PremiumContact 6,80.37,C,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91H Continental EcoContact 6,80.37,A,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,SportContact 2,205/55 R16 91V Continental SportContact 2,80.49,E,C,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91V Continental EcoContact 6,80.49,B,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 5,205/55 R16 91V Continental PremiumContact 5,80.49,C,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91V Continental EcoContact 5,80.49,B,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91V Continental EcoContact 5,80.49,A,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91V Continental EcoContact 6,80.49,A,A,71,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 3,205/55 R16 91W Uniroyal RainSport 3,80.5,E,A,71,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 2,205/55 R16 91W Continental PremiumContact 2,82.3,E,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91W Continental EcoContact 5,82.3,C,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 5,205/55 R16 91W Continental PremiumContact 5,82.3,C,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91W Continental EcoContact 6,82.3,A,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91W Continental EcoContact 6,82.3,A,B,71,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H Michelin Primacy 4,82.36,C,A,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91V Michelin Primacy 3,82.36,C,A,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91V Michelin Primacy 4,82.36,C,A,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91V Michelin Primacy 4,82.36,A,A,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Energy Saver,205/55 R16 91H Michelin Energy Saver,82.47,B,A,70,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H Michelin Primacy 4,84.03,A,B,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H Michelin Primacy 4,84.03,A,B,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H Michelin Primacy 4,84.03,A,A,69,False,False,False,False
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91V Economy ,50.42,G,F,73,False,False,False,False
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91H Economy ,50.42,G,F,73,False,False,False,False
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91W Economy ,54.07,G,F,73,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 91H Uniroyal RainSport 5,66.8,C,A,71,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 91V Uniroyal RainSport 5,67.1,C,A,71,False,False,False,False
+http://dexel.co.uk/,Yokohama,205,55,16,AE50 BluEarth,205/55 R16 91W Yokohama AE50 BluEarth,68.18,C,A,71,False,False,False,False
+http://dexel.co.uk/,Dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91V Dunlop SP Sport BluResponse,69.82,B,A,68,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 91W Uniroyal RainSport 5,69.99,C,A,71,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 91H Hankook Ventus Prime 3 (K125),70.11,C,A,71,False,False,False,False
+http://dexel.co.uk/,Dexel,205,55,16,Premium Choice,205/55 R16 94V Dexel Premium Choice,70.26,C,A,68,False,False,False,True
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91H Goodyear EfficientGrip Performance,71.26,B,A,68,False,False,False,False
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91V Goodyear EfficientGrip Performance,71.26,B,A,68,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 91V Hankook Ventus Prime 3 (K125),71.53,C,A,71,False,False,False,False
+http://dexel.co.uk/,Dunlop,205,55,16,SportMaxx RT,205/55 R16 91Y Dunlop SportMaxx RT,71.66,E,A,67,False,False,False,False
+http://dexel.co.uk/,Dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91W Dunlop SP Sport BluResponse,71.66,B,A,68,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 94V Uniroyal RainSport 5,72.28,C,A,72,False,False,False,True
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91W Goodyear EfficientGrip Performance,72.49,B,A,68,False,False,False,False
+http://dexel.co.uk/,Dexel,205,55,16,Premium Choice,205/55 R16 94W Dexel Premium Choice,73.04,C,A,68,False,False,False,True
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91H Economy ,73.74,E,C,71,True,False,False,False
+http://dexel.co.uk/,Yokohama,205,55,16,AE50 BluEarth,205/55 R16 94V Yokohama AE50 BluEarth,73.95,C,A,71,False,False,False,True
+http://dexel.co.uk/,Bridgestone,205,55,16,Turanza ER300,205/55 R16 91V Bridgestone Turanza ER300,74.82,E,B,71,False,False,False,False
+http://dexel.co.uk/,Bridgestone,205,55,16,Turanza ER300,205/55 R16 91H Bridgestone Turanza ER300,76.02,E,B,71,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 3,205/55 R16 94Y Uniroyal RainSport 3,76.33,C,A,72,False,False,False,True
+http://dexel.co.uk/,Bridgestone,205,55,16,Turanza T005,205/55 R16 91W Bridgestone Turanza T005,76.93,C,B,71,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 94W Hankook Ventus Prime 3 (K125),77.82,C,A,72,False,False,False,True
