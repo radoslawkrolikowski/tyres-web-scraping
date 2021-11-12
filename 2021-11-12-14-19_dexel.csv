@@ -1,0 +1,79 @@
+website,manufacturer,width,profile,rim,tyre_pattern,tyre_size,price,fuel,wetgrip,noise,winter,all_season,run_flat,extra_laod
+http://dexel.co.uk/,Pirelli,205,55,16,P7,205/55 R16 91W,85.22,C,B,71,False,False,False,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91W,85.22,E,B,70,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91W,85.35,C,A,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91W,85.35,A,B,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Energy Saver,205/55 R16 91W,86.48,B,A,70,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 91W,87.84,F,C,69,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Cross Climate +,205/55 R16 94V,88.15,C,B,69,False,True,False,True
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94V,88.7,B,B,72,False,False,False,True
+http://dexel.co.uk/,Dexel,205,55,16,Premium Choice,205/55 R16 91V,88.7,E,A,70,False,False,True,False
+http://dexel.co.uk/,Vredestein,205,55,16,Snowtrac 5,205/55 R16 91H,89.04,E,E,68,True,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94H,89.84,B,B,72,False,False,False,True
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip,205/55 R16 91V,90.37,C,B,68,False,False,True,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91W,90.64,E,B,71,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,eContact (Hybrid cars),205/55 R16 91Q,92.66,A,B,71,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94V,92.79,C,A,69,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94H,92.79,C,A,70,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94H,92.79,A,A,68,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94V,92.79,A,B,68,False,False,False,True
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 94H,94.76,A,B,68,False,False,False,True
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94W,95.38,B,B,72,False,False,False,True
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 94H,96.36,B,B,72,False,False,False,True
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact,205/55 R16 91V,96.52,F,C,68,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91W,96.55,B,B,71,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91V,106.58,E,A,71,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91W,106.58,E,A,71,False,False,True,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91H,106.58,E,A,71,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,WinterContact TS 830 P,205/55 R16 91H,109.8,F,E,72,True,False,True,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91V,79.8,C,B,70,False,False,False,False
+http://dexel.co.uk/,Pirelli,205,55,16,Cinturato P7,205/55 R16 91V,80.35,E,B,70,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91H,80.37,B,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 5,205/55 R16 91H,80.37,C,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 6,205/55 R16 91H,80.37,C,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91H,80.37,A,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,SportContact 2,205/55 R16 91V,80.49,E,C,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91V,80.49,B,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 5,205/55 R16 91V,80.49,C,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91V,80.49,B,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91V,80.49,A,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91V,80.49,A,A,71,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 3,205/55 R16 91W,80.5,E,A,71,False,False,True,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 2,205/55 R16 91W,82.3,E,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 5,205/55 R16 91W,82.3,C,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,PremiumContact 5,205/55 R16 91W,82.3,C,B,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91W,82.3,A,A,71,False,False,False,False
+http://dexel.co.uk/,Continental,205,55,16,EcoContact 6,205/55 R16 91W,82.3,A,B,71,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H,82.36,C,A,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 3,205/55 R16 91V,82.36,C,A,69,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91V,82.36,C,A,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91V,82.36,A,A,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Energy Saver,205/55 R16 91H,82.47,B,A,70,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H,84.03,A,B,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H,84.03,A,B,68,False,False,False,False
+http://dexel.co.uk/,Michelin,205,55,16,Primacy 4,205/55 R16 91H,84.03,A,A,69,False,False,False,False
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91V,50.42,G,F,73,False,False,False,False
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91H,50.42,G,F,73,False,False,False,False
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91W,54.07,G,F,73,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 91H,66.8,C,A,71,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 91V,67.1,C,A,71,False,False,False,False
+http://dexel.co.uk/,Yokohama,205,55,16,AE50 BluEarth,205/55 R16 91W,68.18,C,A,71,False,False,False,False
+http://dexel.co.uk/,Dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91V,69.82,B,A,68,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 91W,69.99,C,A,71,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 91H,70.11,C,A,71,False,False,False,False
+http://dexel.co.uk/,Dexel,205,55,16,Premium Choice,205/55 R16 94V,70.26,C,A,68,False,False,False,True
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91H,71.26,B,A,68,False,False,False,False
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91V,71.26,B,A,68,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 91V,71.53,C,A,71,False,False,False,False
+http://dexel.co.uk/,Dunlop,205,55,16,SportMaxx RT,205/55 R16 91Y,71.66,E,A,67,False,False,False,False
+http://dexel.co.uk/,Dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91W,71.66,B,A,68,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 5,205/55 R16 94V,72.28,C,A,72,False,False,False,True
+http://dexel.co.uk/,Goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91W,72.49,B,A,68,False,False,False,False
+http://dexel.co.uk/,Dexel,205,55,16,Premium Choice,205/55 R16 94W,73.04,C,A,68,False,False,False,True
+http://dexel.co.uk/,Economy ,205,55,16,,205/55 R16 91H,73.74,E,C,71,True,False,False,False
+http://dexel.co.uk/,Yokohama,205,55,16,AE50 BluEarth,205/55 R16 94V,73.95,C,A,71,False,False,False,True
+http://dexel.co.uk/,Bridgestone,205,55,16,Turanza ER300,205/55 R16 91V,74.82,E,B,71,False,False,False,False
+http://dexel.co.uk/,Bridgestone,205,55,16,Turanza ER300,205/55 R16 91H,76.02,E,B,71,False,False,False,False
+http://dexel.co.uk/,Uniroyal,205,55,16,RainSport 3,205/55 R16 94Y,76.33,C,A,72,False,False,False,True
+http://dexel.co.uk/,Bridgestone,205,55,16,Turanza T005,205/55 R16 91W,76.93,C,B,71,False,False,False,False
+http://dexel.co.uk/,Hankook,205,55,16,Ventus Prime 3 (K125),205/55 R16 94W,77.82,C,A,72,False,False,False,True
