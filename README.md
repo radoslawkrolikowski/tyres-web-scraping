@@ -107,10 +107,12 @@ To increase the performance of most common queries like searching by tyre size (
 ### Running spiders
 
 Use the run_spider.py script and provide the required arguments:
+
 `python run_spider.py --spider dexel --width 175 --profile 50 --rim 15 --dbname tyres --collname tyres` 
+
 `python run_spider.py --spider national --width 205 --profile 55 --rim 16 --dbname tyres --collname tyres`
 
-You could also use the `scrapy crawl <spider_name> -a <k>=<v>` command
+You could also use the `scrapy crawl <spider_name> -a <k>=<v>` command.
 
 ### Query the MongoDB database
 
@@ -126,11 +128,14 @@ You could also use the `scrapy crawl <spider_name> -a <k>=<v>` command
 4. Query the database:
 
     Search using tyre size:
+    
     `db.tyres.find({width: "205", profile: "55"})` 
     
     Query using tyre size and price condition (less than £70):
+    
     `db.tyres.find({width: "205", profile: "55", rim: "16", price: {"$lt": 90}})`
     
     Search for all season tyres with specified size (205/55/16) and price range (£60 to £80):
+    
     `db.tyres.find({ $and: [ {price: {$lt: 80}}, {price: {$gt: 60}}, {width: "205"}, {profile: "55"}, {rim: "16"}, {all_season: true} ]})`
 
