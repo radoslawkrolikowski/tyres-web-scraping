@@ -1,55 +1,58 @@
-Create the virtual environment:
+## Tyres web scraping technical assignment
 
-conda create -n tyres-web-scraping python==3.7 
+The repository contains python implementations of Scrapy spiders that scrap data regarding offered tyres from the following websites:
+* <dexel.co.uk>
+* <national.co.uk>
 
-OR
+Subsequently, all the retrieved items are exported to a CSV file and saved into the MongoDB collection if specified. 
 
-python3 -m venv /home/debian/Documents/web-scraping
+The repository also includes python scripts for setting up a MongoDB instance using Docker, creating MongoDB database, collection and compound index, running chosen spiders with specified input arguments such as width, profile or rim.
 
-Activate the environment:
+#### Python packages:
+Install all packages included in requirements.txt
 
-conda activate tyres-web-scraping 
+1. Create a virtual environment (conda, virtualenv etc.).
+   - `conda create -n <env_name> python=3.7`
+2. Activate your environment.
+   - `conda activate <env_name>`
+3. Install requirements.
+   - `pip install -r requirements.txt `
+4. Restart your environment.
+    - `conda deactivate`
+    - `conda activate <env_name>`
 
-OR
+#### Webdriver
 
-source /home/debian/Documents/web-scraping/bin/activate
+Downlaod and set up the Firefox webdriver (other webdriver like Chrome can also be used)
 
+1. Download the Firefox driver ([link](https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-win64.zip) for Windows)
 
-pip install Scrapy
-pip install selenium
-pip install pymongo
+2. Add the localization of the driver to the PATH (Windows):
+    - `set PATH=%PATH%;C:\Users\user\Downloads\geckodriver-v0.30.0-win64`
 
-Download the Firefox driver:
+### Docker
 
-https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-win64.zip
+1. Install Docker for your system - <https://docs.docker.com/get-docker/>
+2. Go to the directory of docker-compose.yaml file and run the following command:
+- `docker-compose up -d`
 
+### MongoDB
 
-Add the localization of the driver to the PATH:
+1. You can check the status of docker containers using:
+    - `docker ps`
 
-`set PATH=%PATH%;C:\Users\user\Downloads\geckodriver-v0.30.0-win64`
+2. While mongo and mongo-express containers are running, the MongoDB WebUI is available under the ofllowing address:
+    - `localhost:8081`
 
+3. Connection to the MongoDB instance can now be established using the URI: 
+    - `mongodb://localhost:27017/`
 
-Go to the directory of docker-compose.yaml file and run the following command:
-
-`docker-compose up -d`
-
-MongoDb WebUI is available under the ollowing address:
-
-localhost:8081
-
-Connection to the MongoSb instance can now be established using the URI: 
-
-mongodb://localhost:27017/
-
-Create the database and the collection in MongoDB:
-
-Run the following command:
-
-`python create_database.py`
+4. Create the database and the collection in MongoDB using python script:
+    - `python create_database.py`
 
 MongoDB collections have dynamic schemas, thus we can insert documents containing different fields.
 
-The items inserted into the database by Scrapy pipeline will impose the following schema:
+The items returned by the Scrapy pipeline have the following schema:
 
 | Field name  | Type |
 | ------------- | ------------- |
@@ -61,7 +64,7 @@ The items inserted into the database by Scrapy pipeline will impose the followin
 | price | float  |
 | fuel | str  |
 | wetgrip  | str  |
-| noise / noise_reduction | str  |
+| noise / noise_reduction | str/boolean  |
 | winter  | boolean  |
 | all_season  | boolean  |
 | run_flat | boolean  |
@@ -69,6 +72,7 @@ The items inserted into the database by Scrapy pipeline will impose the followin
 
 Example document:
 
+```
 {
     _id: ObjectId('618e5db5d5143165a3453060'),
     manufacturer: 'Hankook',
@@ -87,9 +91,9 @@ Example document:
     width: '205',
     winter: false
 }
+```
 
 When loading new items into the database we will perform upsert (update/insert). The match on the manufacturer, tyre_pattern and tyre_size fields will decide whether we have encountered duplicates and we have to update the data or insert new documents into the database.
-
 
 To increase the performance of most common queries like searching by tyre size (width, profile, rim) and price the compound index was created on the following fields:
 
@@ -100,35 +104,33 @@ To increase the performance of most common queries like searching by tyre size (
 | rim  | ASC  |
 | price  | ASC  |
 
+### Running spiders
 
-Run the spider with:
+Use the run_spider.py script and provide the required arguments:
 `python run_spider.py --spider dexel --width 175 --profile 50 --rim 15 --dbname tyres --collname tyres` 
-
 `python run_spider.py --spider national --width 205 --profile 55 --rim 16 --dbname tyres --collname tyres`
 
-Query the database
+You could also use the `scrapy crawl <spider_name> -a <k>=<v>` command
 
-Access the bash of the MongoDB container:
+### Query the MongoDB database
 
-`docker exec -it <container_id> bash`  
+1. Access the bash of the MongoDB container:
+    - `docker exec -it <container_id> bash`  
 
-Subsequently run the mongo command to login into the MongoDB (password: "example"):
+2. Subsequently, run the `mongo` command to login into the MongoDB (password: "example"):
+    - `mongo -u root -p`
 
-`mongo -u root -p`
+3. Change the database:
+    - `use tyres`
 
-Change the DB:
+4. Query the database:
 
-`use tyres`
-
-Search using tyre size:
-
-db.tyres.find({width: "205", profile: "55"}) 
-
-Query using tyre size and price condition (less than £70):
-
-db.tyres.find({width: "205", profile: "55", rim: "16", price: {"$lt": 90}})
-
-Search for all season tyres with specified size (205/55/16) and price range (£60 to £80):
-
-db.tyres.find({ $and: [ {price: {$lt: 80}}, {price: {$gt: 60}}, {width: "205"}, {profile: "55"}, {rim: "16"}, {all_season: true} ]})  
+    Search using tyre size:
+    `db.tyres.find({width: "205", profile: "55"})` 
+    
+    Query using tyre size and price condition (less than £70):
+    `db.tyres.find({width: "205", profile: "55", rim: "16", price: {"$lt": 90}})`
+    
+    Search for all season tyres with specified size (205/55/16) and price range (£60 to £80):
+    `db.tyres.find({ $and: [ {price: {$lt: 80}}, {price: {$gt: 60}}, {width: "205"}, {profile: "55"}, {rim: "16"}, {all_season: true} ]})`
 
