@@ -15,7 +15,7 @@ mycol.create_index([("width" , 1),
                     ("profile", 1),
                     ("rim", 1),
                     ("price", 1)],
-                        name="index")
+                     name="tyre_size_price_idx")
 
 # List the indexes:
 print('Available indexes:')
