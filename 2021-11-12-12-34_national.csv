@@ -1,0 +1,107 @@
+website,manufacturer,width,profile,rim,tyre_pattern,tyre_size,price,fuel,wetgrip,noise_reduction,winter,all_season,run_flat,extra_laod
+http://national.co.uk/,rovelo,205,55,16,RHP-780P,205/55 R16 91V,50.71,D,C,False,False,False,True,False
+http://national.co.uk/,autogreen,205,55,16,Sport Chaser SC2,205/55 R16 91W,51.79,D,A,False,False,False,True,False
+http://national.co.uk/,sailun,205,55,16,Atrezzo Elite,205/55 R16 91V,56.72,C,B,False,False,False,True,False
+http://national.co.uk/,sailun,205,55,16,Atrezzo Elite,205/55 R16 91W,58.72,C,B,False,False,False,True,False
+http://national.co.uk/,avon,205,55,16,ZV7,205/55 R16 91V,59.96,D,A,False,False,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato P7,205/55 R16 91V,67.99,C,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T005,205/55 R16 91V,69.32,B,A,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T005,205/55 R16 91W,71.41,B,A,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91V,72.13,B,A,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance 2,205/55 R16 91V,72.62,B,A,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T005 DriveGuard,205/55 R16 94W,77.58,C,A,False,False,False,True,True
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 6,205/55 R16 91V,80.3,A,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 4,205/55 R16 91V,87.97,C,A,False,False,False,True,False
+http://national.co.uk/,uniroyal,205,55,16,RainSport 5,205/55 R16 91H,62.12,C,A,False,False,False,True,False
+http://national.co.uk/,uniroyal,205,55,16,RainSport 5,205/55 R16 91V,62.29,C,A,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,BluEarth ES32,205/55 R16 91V,63.06,C,B,False,False,False,True,False
+http://national.co.uk/,avon,205,55,16,AS7,205/55 R16 91V,64.22,D,B,False,False,True,True,False
+http://national.co.uk/,avon,205,55,16,ZV7,205/55 R16 94V,65.21,D,A,False,False,False,True,True
+http://national.co.uk/,avon,205,55,16,AS7,205/55 R16 94V,65.72,C,B,False,False,True,True,True
+http://national.co.uk/,yokohama,205,55,16,Advan Sport V103,205/55 R16 91V,66.21,D,B,False,False,False,True,False
+http://national.co.uk/,uniroyal,205,55,16,RainSport 5,205/55 R16 91W,66.62,C,A,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,Advan Sport V105,205/55 R16 91V,67.54,C,B,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,BluEarth-4S AW21,205/55 R16 91V,67.8,D,B,False,False,True,True,False
+http://national.co.uk/,yokohama,205,55,16,BluEarth AE51,205/55 R16 91W,68.14,B,A,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,C.Drive AC02,205/55 R16 91H,68.21,C,C,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,Advan Sport V105,205/55 R16 91W,69.72,C,B,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,Advan Fleva V701,205/55 R16 91W,71.2,C,A,False,False,False,True,False
+http://national.co.uk/,avon,205,55,16,WV7 Snow,205/55 R16 94V,72.36,D,B,False,True,False,True,True
+http://national.co.uk/,yokohama,205,55,16,BluEarth-4S AW21,205/55 R16 94V,79.96,D,B,False,False,True,True,True
+http://national.co.uk/,yokohama,205,55,16,Advan Sport V103,205/55 R16 91W,80.83,D,C,False,False,False,True,False
+http://national.co.uk/,yokohama,205,55,16,A008P,205/55 R16 91W,148.16,D,B,False,False,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato P7 P7C2,205/55 R16 91V,67.99,C,A,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T005,205/55 R16 91W,71.36,C,B,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91H,71.53,B,A,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91V,72.13,B,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza ER300,205/55 R16 91V,72.24,D,B,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip,205/55 R16 91V,72.62,C,B,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91H,73.19,A,C,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance 2,205/55 R16 91H,73.19,B,A,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Sport BluResponse,205/55 R16 91W,73.33,B,A,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,Sport Maxx RT,205/55 R16 91Y,73.33,C,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T001,205/55 R16 91Q,73.46,A,B,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance 2,205/55 R16 91W,73.83,B,A,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza ER300,205/55 R16 91H,74.37,D,B,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,Sport Maxx RT,205/55 R16 91W,74.88,C,B,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91W,75.38,C,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Weather Control A005 EVO,205/55 R16 91H,75.48,C,A,False,False,True,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T005,205/55 R16 91W,75.72,A,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza ER300A,205/55 R16 91W,76.92,C,B,False,False,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Sport Fast Response,205/55 R16 94H,77.58,C,B,False,False,False,True,True
+http://national.co.uk/,bridgestone,205,55,16,Weather Control A005 EVO,205/55 R16 94V,77.58,C,A,False,False,True,True,True
+http://national.co.uk/,goodyear,205,55,16,Vector 4Seasons Gen 3,205/55 R16 91V,78.94,C,B,False,False,True,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato P7,205/55 R16 91W,79.17,C,B,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 6,205/55 R16 91H,80.19,A,A,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,PremiumContact 6,205/55 R16 91V,80.3,C,A,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 5,205/55 R16 91V,80.3,B,B,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 5,205/55 R16 91V,80.3,A,B,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 5,205/55 R16 91V,80.3,B,B,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 6,205/55 R16 91W,82.18,A,A,False,False,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato P7,205/55 R16 91W,82.52,D,B,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,Vector 4Seasons Gen 3,205/55 R16 94V,82.76,C,B,False,False,True,True,True
+http://national.co.uk/,goodyear,205,55,16,Vector 4Seasons,205/55 R16 94V,83.63,C,C,False,False,True,True,True
+http://national.co.uk/,goodyear,205,55,16,Vector 4Seasons Gen-2,205/55 R16 94V,83.99,B,B,False,False,True,True,True
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance 2,205/55 R16 94W,84.68,B,A,False,False,False,True,True
+http://national.co.uk/,pirelli,205,55,16,Cinturato All Season SF 2,205/55 R16 94V,85.89,B,B,False,False,True,True,True
+http://national.co.uk/,bridgestone,205,55,16,Ecopia EP150,205/55 R16 91V,86.37,B,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza T005,205/55 R16 91W,86.46,B,B,False,False,False,True,False
+http://national.co.uk/,bridgestone,205,55,16,Turanza ER300,205/55 R16 91W,87.24,D,B,False,False,False,True,False
+http://national.co.uk/,continental,205,55,16,ContiEcoContact 6,205/55 R16 94H,89.98,A,A,False,False,False,True,True
+http://national.co.uk/,bridgestone,205,55,16,Turanza T001,205/55 R16 91V,90.38,D,B,False,False,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato P7 P7C2,205/55 R16 94V,91.5,B,A,False,False,False,True,True
+http://national.co.uk/,goodyear,205,55,16,UltraGrip 9,205/55 R16 91H,92.07,C,B,False,True,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance 2,205/55 R16 91Y,92.88,C,A,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip,205/55 R16 91W,93.03,C,B,False,False,False,True,False
+http://national.co.uk/,goodyear,205,55,16,UltraGrip 9,205/55 R16 91T,93.58,C,B,False,True,False,True,False
+http://national.co.uk/,goodyear,205,55,16,EfficientGrip Performance,205/55 R16 91V,100.34,A,C,False,False,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato Winter 2,205/55 R16 91H,102.38,C,B,False,True,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Cinturato Winter 2,205/55 R16 91T,102.98,C,B,False,True,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Winter Sport 4D,205/55 R16 91H,107.08,C,C,False,True,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Winter Sport 4D,205/55 R16 91H,108.68,C,C,False,True,False,True,False
+http://national.co.uk/,dunlop,205,55,16,Winter Sport 5,205/55 R16 91H,111.68,C,B,False,True,False,True,False
+http://national.co.uk/,goodyear,205,55,16,UltraGrip Performance 2,205/55 R16 91H,111.8,D,C,False,True,False,True,False
+http://national.co.uk/,goodyear,205,55,16,UltraGrip Performance,205/55 R16 91H,115.98,C,B,False,True,False,True,False
+http://national.co.uk/,dunlop,205,55,16,Winter Sport 5,205/55 R16 94H,119.38,C,B,False,True,False,True,True
+http://national.co.uk/,dunlop,205,55,16,SP Winter Sport 3D,205/55 R16 91H,119.49,D,C,False,True,False,True,False
+http://national.co.uk/,dunlop,205,55,16,SP Winter Sport 4D,205/55 R16 91H,121.98,D,C,False,True,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Winter Sottozero 3,205/55 R16 91H,128.99,D,B,False,True,False,True,False
+http://national.co.uk/,pirelli,205,55,16,Winter 240 Sottozero Serie II,205/55 R16 94V,132.0,C,C,False,True,False,True,True
+http://national.co.uk/,dunlop,205,55,16,Winter Sport 5,205/55 R16 94V,135.08,C,B,False,True,False,True,True
+http://national.co.uk/,pirelli,205,55,16,P Zero Rosso,205/55 R16 91Y,137.73,D,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 4,205/55 R16 91H,87.97,C,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 3,205/55 R16 91V,87.97,C,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Energy Saver,205/55 R16 91H,88.08,B,B,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 4,205/55 R16 91H,89.75,A,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,ePrimacy,205/55 R16 91H,90.17,A,B,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,ePrimacy,205/55 R16 91V,90.17,A,B,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 4,205/55 R16 91W,91.21,A,B,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Pilot Exalto PE2,205/55 R16 91Y,91.24,D,B,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Pilot Sport 4,205/55 R16 91W,92.04,D,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,ePrimacy,205/55 R16 91W,93.5,A,B,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 4,205/55 R16 94H,101.39,A,B,False,False,False,True,True
+http://national.co.uk/,michelin,205,55,16,ePrimacy,205/55 R16 94V,101.86,A,B,False,False,False,True,True
+http://national.co.uk/,michelin,205,55,16,Pilot Sport 4,205/55 R16 94Y,103.34,C,A,False,False,False,True,True
+http://national.co.uk/,michelin,205,55,16,ePrimacy,205/55 R16 94H,112.29,A,B,False,False,False,True,True
+http://national.co.uk/,michelin,205,55,16,Primacy 3,205/55 R16 91V,114.25,D,A,False,False,False,True,False
+http://national.co.uk/,michelin,205,55,16,Primacy 3,205/55 R16 91W,114.25,D,A,False,False,False,True,False
