@@ -46,7 +46,7 @@ class TyresToMongoDbPipeline:
     the username and password from an external file.
 
     Pipeline updates/inserts items based on the following selection criteria (fileds):
-        {'manufacturer', 'width', 'profile', 'rim', 'tyre_pattern'}
+        {'manufacturer', 'description', 'tyre_pattern'}
 
     Parameters
     ----------
@@ -78,9 +78,7 @@ class TyresToMongoDbPipeline:
     def process_item(self, item, spider):
         if self.db_name:
             filter = {'manufacturer': item['manufacturer'],
-                      'width': item['width'],
-                      'profile': item['profile'],
-                      'rim': item['rim'],
+                      'description': item['description'],
                       'tyre_pattern': item['tyre_pattern']}
             # Perform upsert one item at a time
             self.db[self.coll_name].update_one(filter, {"$set": item}, upsert=True)
