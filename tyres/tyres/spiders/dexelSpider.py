@@ -1,5 +1,4 @@
 import scrapy
-from scrapy.http import Request
 from scrapy.selector import Selector
 from scrapy.crawler import CrawlerProcess
 from selenium import webdriver
@@ -112,7 +111,7 @@ class DexelspiderSpider(scrapy.Spider):
                 'profile': self.profile,
                 'rim': self.rim,
                 'tyre_pattern': tyre_pattern,
-                'description': " ".join(description),
+                'tyre_size': " ".join(description),
                 'price': price,
                 'fuel': fuel,
                 'wetgrip': wetgrip,

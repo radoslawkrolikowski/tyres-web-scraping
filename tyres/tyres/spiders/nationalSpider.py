@@ -68,7 +68,7 @@ class NationalspiderSpider(scrapy.Spider):
 
             tyre_pattern = result.xpath('.//*[@class="pattern_link"]/text()').extract_first() 
 
-            description = result.xpath('.//*[@class="pattern_link"]/parent::p/following-sibling::p[1]/text()').extract_first().strip()
+            tyre_size = result.xpath('.//*[@class="pattern_link"]/parent::p/following-sibling::p[1]/text()').extract_first().strip()
 
             yield {
                 'website': self.start_urls[0],
@@ -77,7 +77,7 @@ class NationalspiderSpider(scrapy.Spider):
                 'profile': self.profile,
                 'rim': self.rim,
                 'tyre_pattern': tyre_pattern,
-                'description': description,
+                'tyre_size': tyre_size,
                 'price': price,
                 'fuel': fuel,
                 'wetgrip': wetgrip,

@@ -78,7 +78,7 @@ class TyresToMongoDbPipeline:
     def process_item(self, item, spider):
         if self.db_name:
             filter = {'manufacturer': item['manufacturer'],
-                      'description': item['description'],
+                      'tyre_size': item['tyre_size'],
                       'tyre_pattern': item['tyre_pattern']}
             # Perform upsert one item at a time
             self.db[self.coll_name].update_one(filter, {"$set": item}, upsert=True)
