@@ -46,7 +46,7 @@ class TyresToMongoDbPipeline:
     the username and password from an external file.
 
     Pipeline updates/inserts items based on the following selection criteria (fileds):
-        {'manufacturer', 'description', 'tyre_pattern'}
+        {'manufacturer', 'tyre_size', 'tyre_pattern'}
 
     Parameters
     ----------
