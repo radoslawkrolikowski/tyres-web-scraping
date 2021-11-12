@@ -1,6 +1,7 @@
 import argparse
 from scrapy.crawler import CrawlerProcess
 from tyres.spiders.dexelSpider import DexelspiderSpider
+from tyres.spiders.nationalSpider import NationalspiderSpider
 from datetime import datetime
 
 
@@ -13,7 +14,8 @@ from datetime import datetime
 # collname = "tyres"
 
 # Example command:
-# python run_spider.py --spider dexel --width 175 --profile 50 --rim 15 --dbname tyres --collname tyres
+# python run_spider.py --spider dexel --width 205 --profile 55 --rim 16 --dbname tyres --collname tyres
+# python run_spider.py --spider national --width 205 --profile 55 --rim 16 --dbname tyres --collname tyres
  
 if __name__ == '__main__':
     process = CrawlerProcess({
@@ -28,7 +30,7 @@ if __name__ == '__main__':
     parser.add_argument(
         "--spider",
         help="Spider name",
-        choices=["dexel"],
+        choices=["dexel", "national"],
         required=True
     )
     parser.add_argument(
@@ -78,8 +80,15 @@ if __name__ == '__main__':
 
         process.crawl(DexelspiderSpider, width=args.width, profile=args.profile, rim=args.rim, filepath=args.filepath, db_name=args.dbname, coll_name=args.collname)
         process.start() # the script will block here until the crawling is finished
+
+    elif args.spider == "national":
+        if not args.filepath:
+            args.filepath = datetime.now().strftime('%Y-%m-%d-%H-%M') + '_' + args.spider + '.csv'
+
+        process.crawl(NationalspiderSpider, width=args.width, profile=args.profile, rim=args.rim, filepath=args.filepath, db_name=args.dbname, coll_name=args.collname)
+        process.start() # the script will block here until the crawling is finished
     else:
-        pass
+        raise ValueError("Spider name is not recognized")
 
 
 
