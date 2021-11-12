@@ -111,7 +111,7 @@ class DexelspiderSpider(scrapy.Spider):
                 'profile': self.profile,
                 'rim': self.rim,
                 'tyre_pattern': tyre_pattern,
-                'tyre_size': " ".join(description),
+                'tyre_size': tyre_size,
                 'price': price,
                 'fuel': fuel,
                 'wetgrip': wetgrip,
