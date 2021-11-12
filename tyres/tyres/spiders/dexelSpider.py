@@ -94,6 +94,8 @@ class DexelspiderSpider(scrapy.Spider):
                 tyre_pattern = None
 
             price = result.xpath('.//*[@class="price"]/strong/text()').extract_first().strip('£')
+            price = float(price) if price else None
+            
             fuel = result.xpath('.//*[@class="fuel"]/text()').extract_first()
             wetgrip = result.xpath('.//*[@class="wetgrip"]/text()').extract_first()
             noise = result.xpath('.//*[@class="noise"]/text()').extract_first().strip(' dB')
@@ -109,6 +111,7 @@ class DexelspiderSpider(scrapy.Spider):
                 'profile': self.profile,
                 'rim': self.rim,
                 'tyre_pattern': tyre_pattern,
+                'description': description,
                 'price': price,
                 'fuel': fuel,
                 'wetgrip': wetgrip,
